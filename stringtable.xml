@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="War3Front">
+	<Package name="War3Front">
+		<Key ID="STR_Private">
+			<Original>Private</Original>
+			<Russian>Рядовой</Russian>
+		</Key>
+		<Key ID="STR_Sergeant">
+			<Original>Sergeant</Original>
+			<Russian>Сержант</Russian>
+		</Key>
+		<Key ID="STR_Foreman">
+			<Original>Foreman</Original>
+			<Russian>Старшина</Russian>
+		</Key>
+		<Key ID="STR_SecLieutenant">
+			<Original>Second lieutenant</Original>
+			<Russian>Младший лейтенант</Russian>
+		</Key>
+		<Key ID="STR_Lieutenant">
+			<Original>Lieutenant</Original>
+			<Russian>Лейтенант</Russian>
+		</Key>
+		<Key ID="STR_SenLieutenant">
+			<Original>Senior lieutenant</Original>
+			<Russian>Старший лейтенант</Russian>
+		</Key>
+		<Key ID="STR_Captain">
+			<Original>Captain</Original>
+			<Russian>Капитан</Russian>
+		</Key>
+		<Key ID="STR_Major">
+			<Original>Major</Original>
+			<Russian>Майор</Russian>
+		</Key>
+		<Key ID="STR_LieColonel">
+			<Original>Lieutenant colonel</Original>
+			<Russian>Подполковник</Russian>
+		</Key>
+		<Key ID="STR_Colonel">
+			<Original>Colonel</Original>
+			<Russian>Полковник</Russian>
+		</Key>
+		<Key ID="STR_Base">
+			<Original>Base</Original>
+			<Russian>База</Russian>
+		</Key>
+		<Key ID="STR_Pavlovo">
+			<Original>Palvovo</Original>
+			<Russian>Павлово</Russian>
+		</Key>
+		<Key ID="STR_Zelenogorsk">
+			<Original>Zelenogorsk</Original>
+			<Russian>Зеленогорск</Russian>
+		</Key>
+		<Key ID="STR_Sosnovka">
+			<Original>Sosnovka</Original>
+			<Russian>Сосновка</Russian>
+		</Key>
+		<Key ID="STR_Pustoshka">
+			<Original>Pustoshka</Original>
+			<Russian>Пустошка</Russian>
+		</Key>
+		<Key ID="STR_Vybor">
+			<Original>Vybor</Original>
+			<Russian>Выбор</Russian>
+		</Key>
+		<Key ID="STR_Airport">
+			<Original>Airport</Original>
+			<Russian>Аэропорт</Russian>
+		</Key>
+		<Key ID="STR_Grishino">
+			<Original>Grishino</Original>
+			<Russian>Гришино</Russian>
+		</Key>
+		<Key ID="STR_Gvozdno">
+			<Original>Gvozdno</Original>
+			<Russian>Гвоздно</Russian>
+		</Key>
+		<Key ID="STR_Krasnostav">
+			<Original>Krasnostav</Original>
+			<Russian>Красностав</Russian>
+		</Key>
+		<Key ID="STR_VPP">
+			<Original>VPP</Original>
+			<Russian>ВПП</Russian>
+		</Key>
+		<Key ID="STR_Bor">
+			<Original>Bor</Original>
+			<Russian>Бор</Russian>
+		</Key>
+		<Key ID="STR_Kozlovka">
+			<Original>Kozlovka</Original>
+			<Russian>Козловка</Russian>
+		</Key>
+		<Key ID="STR_Pulkovo">
+			<Original>Pulkovo</Original>
+			<Russian>Пулково</Russian>
+		</Key>
+		<Key ID="STR_Rogovo">
+			<Original>Rogovo</Original>
+			<Russian>Рогово</Russian>
+		</Key>
+		<Key ID="STR_NovySobor">
+			<Original>Novy Sobor</Original>
+			<Russian>Новый Собор</Russian>
+		</Key>
+		<Key ID="STR_Gorka">
+			<Original>Gorka</Original>
+			<Russian>Горка</Russian>
+		</Key>
+		<Key ID="STR_Dubrovka">
+			<Original>Dubrovka</Original>
+			<Russian>Дубровка</Russian>
+		</Key>
+		<Key ID="STR_Komarovo">
+			<Original>Komarovo</Original>
+			<Russian>Комарово</Russian>
+		</Key>
+		<Key ID="STR_Airfield">
+			<Original>Airfield</Original>
+			<Russian>Аэродром</Russian>
+		</Key>
+		<Key ID="STR_Chernogorsk">
+			<Original>Chernogorsk</Original>
+			<Russian>Черногорск</Russian>
+		</Key>
+		<Key ID="STR_Prigorodki">
+			<Original>Prigorodki</Original>
+			<Russian>Пригородки</Russian>
+		</Key>
+		<Key ID="STR_Elektrozavodsk">
+			<Original>Elektrozavodsk</Original>
+			<Russian>Электрозаводск</Russian>
+		</Key>
+		<Key ID="STR_Kamyshovo">
+			<Original>Kamyshovo</Original>
+			<Russian>Камышово</Russian>
+		</Key>
+		<Key ID="STR_Solnechny">
+			<Original>Solnechny</Original>
+			<Russian>Солнечный</Russian>
+		</Key>
+		<Key ID="STR_Nizhnoe">
+			<Original>Nizhnoe</Original>
+			<Russian>Нижное</Russian>
+		</Key>
+		<Key ID="STR_Berezino">
+			<Original>Berezino</Original>
+			<Russian>Березино</Russian>
+		</Key>
+		<Key ID="STR_Khelm">
+			<Original>Khelm</Original>
+			<Russian>Хельм</Russian>
+		</Key>
+		<Key ID="STR_ComN">
+			<Original>Comcenter North</Original>
+			<Russian>Комцентр Север</Russian>
+		</Key>
+		<Key ID="STR_ComC">
+			<Original>Comcenter Center</Original>
+			<Russian>Комцентр Центр</Russian>
+		</Key>
+		<Key ID="STR_ComS">
+			<Original>Comcenter South</Original>
+			<Russian>Комцентр Юг</Russian>
+		</Key>
+		<Key ID="STR_GenN">
+			<Original>General North</Original>
+			<Russian>Генерал Север</Russian>
+		</Key>
+		<Key ID="STR_GenC">
+			<Original>General Center</Original>
+			<Russian>Генерал Центр</Russian>
+		</Key>
+		<Key ID="STR_GenS">
+			<Original>General South</Original>
+			<Russian>Генерал Юг</Russian>
+		</Key>
+		<Key ID="STR_End">
+			<Original>Mission complete</Original>
+			<Russian>Миссия выполнена</Russian>
+		</Key>
+		<Key ID="STR_UAVControls">
+			<Original>Controls\nPageUp _ PageDown\nHome _ End\nMap - 'M'\nПНВ - 'N'\nSpeed - W _ S\nTab - Exit</Original>
+			<Russian>Управление\nPageUp _ PageDown\nHome _ End\nКарта - 'M'\nПНВ - 'N'\nСкорость - W _ S\nTab - Выход</Russian>
+		</Key>
+		<Key ID="STR_UAVSpeed">
+			<Original>Speed -</Original>
+			<Russian>Скорость -</Russian>
+		</Key>
+		<Key ID="STR_UAVHeight">
+			<Original>Height -</Original>
+			<Russian>Высота -</Russian>
+		</Key>
+		<Key ID="STR_UAVRadius">
+			<Original>Radius -</Original>
+			<Russian>Радиус -</Russian>
+		</Key>
+		<Key ID="STR_RankBlank">
+			<Original>Rank</Original>
+			<Russian>Звание</Russian>
+		</Key>
+		<Key ID="STR_ParamGrassName">
+			<Original>Grass</Original>
+			<Russian>Трава</Russian>
+		</Key>
+		<Key ID="STR_ParamGrass50">
+			<Original>No</Original>
+			<Russian>Нет</Russian>
+		</Key>
+		<Key ID="STR_ParamGrass3">
+			<Original>All</Original>
+			<Russian>Вся</Russian>
+		</Key>
+		<Key ID="STR_ParamAIName">
+			<Original>AI can be hired</Original>
+			<Russian>Наём ИИ</Russian>
+		</Key>
+		<Key ID="STR_ParamAllNo">
+			<Original>No</Original>
+			<Russian>Нет</Russian>
+		</Key>
+		<Key ID="STR_ParamAllYes">
+			<Original>Yes</Original>
+			<Russian>Да</Russian>
+		</Key>
+		<Key ID="STR_ParamRespawnNearName">
+			<Original>Respawning near the place of death</Original>
+			<Russian>Возрождение рядом с местом смерти</Russian>
+		</Key>
+		<Key ID="STR_ParamAllAvail">
+			<Original>Available</Original>
+			<Russian>Доступно</Russian>
+		</Key>
+		<Key ID="STR_ParamAllUnavail">
+			<Original>Unavailable</Original>
+			<Russian>Недоступно</Russian>
+		</Key>
+		<Key ID="STR_ParamERankName">
+			<Original>Rank up faster</Original>
+			<Russian>Получать звания быстрее</Russian>
+		</Key>
+		<Key ID="STR_ParamLockName">
+			<Original>Enemy vehicles are locked</Original>
+			<Russian>Вражеская техника заперта</Russian>
+		</Key>
+		<Key ID="STR_ParamLoadName">
+			<Original>Load saved game</Original>
+			<Russian>Загрузить сохранение</Russian>
+		</Key>
+		<Key ID="STR_ParamLoad2">
+			<Original>Yes, but reset vehicles positions</Original>
+			<Russian>Да, но сбросить позиции техники</Russian>
+		</Key>
+		<Key ID="STR_AirRepair">
+			<Original>Repair (Air)</Original>
+			<Russian>Ремонт ЛА</Russian>
+		</Key>
+		<Key ID="STR_Artillery">
+			<Original>Artillery</Original>
+			<Russian>Артиллерия</Russian>
+		</Key>
+		<Key ID="STR_OnTheWay">
+			<Original>On the way</Original>
+			<Russian>В пути</Russian>
+		</Key>
+		<Key ID="STR_AviaSupport">
+			<Original>Avia Support</Original>
+			<Russian>Авиаподдержка</Russian>
+		</Key>
+		<Key ID="STR_AIHire">
+			<Original>Recruiting</Original>
+			<Russian>Рекруты</Russian>
+		</Key>
+		<Key ID="STR_UAV">
+			<Original>UAV</Original>
+			<Russian>БПЛА</Russian>
+		</Key>
+		<Key ID="STR_Teleport">
+			<Original>Teleport</Original>
+			<Russian>Телепорт</Russian>
+		</Key>
+		<Key ID="STR_NewPos">
+			<Original>New position</Original>
+			<Russian>Новая позиция</Russian>
+		</Key>
+		<Key ID="STR_RepCoord">
+			<Original>Report coordinates</Original>
+			<Russian>Доложить координаты</Russian>
+		</Key>
+		<Key ID="STR_ClickOnMap">
+			<Original>Click on map</Original>
+			<Russian>Щелкните по карте</Russian>
+		</Key>
+		<Key ID="STR_SelectDestination">
+			<Original>Select destination</Original>
+			<Russian>Выберите зону высадки</Russian>
+		</Key>
+		<Key ID="STR_NorthFront">
+			<Original>Northern front</Original>
+			<Russian>Северный фронт</Russian>
+		</Key>
+		<Key ID="STR_CentralFront">
+			<Original>Central front</Original>
+			<Russian>Центральный фронт</Russian>
+		</Key>
+		<Key ID="STR_SouthFront">
+			<Original>Southern front</Original>
+			<Russian>Южный фронт</Russian>
+		</Key>
+		<Key ID="STR_WithAI">
+			<Original>With AI</Original>
+			<Russian>С ИИ</Russian>
+		</Key>
+		<Key ID="STR_Alone">
+			<Original>Alone</Original>
+			<Russian>Один</Russian>
+		</Key>
+		<Key ID="STR_AvailableAI">
+			<Original>Available AI</Original>
+			<Russian>Рекруты</Russian>
+		</Key>
+		<Key ID="STR_PlayersGroup">
+			<Original>Player's group</Original>
+			<Russian>Группа игрока</Russian>
+		</Key>
+		<Key ID="STR_SelectGL">
+			<Original>Select group leader</Original>
+			<Russian>Выберите лидера отряда</Russian>
+		</Key>
+		<Key ID="STR_Select">
+			<Original>Select</Original>
+			<Russian>Выбрать</Russian>
+		</Key>
+		<Key ID="STR_Leave">
+			<Original>Leave</Original>
+			<Russian>Покинуть</Russian>
+		</Key>
+		<Key ID="STR_Exit">
+			<Original>Exit</Original>
+			<Russian>Выход</Russian>
+		</Key>
+		<Key ID="STR_ViewDistance">
+			<Original>View Distance</Original>
+			<Russian>Дистанция видимости</Russian>
+		</Key>
+		<Key ID="STR_HireAI">
+			<Original>Hire AI</Original>
+			<Russian>Рекруты</Russian>
+		</Key>
+		<Key ID="STR_Group">
+			<Original>Group</Original>
+			<Russian>Группа</Russian>
+		</Key>
+		<Key ID="STR_Repair">
+			<Original>Repair</Original>
+			<Russian>Ремонт</Russian>
+		</Key>
+		<Key ID="STR_AviaInvest">
+			<Original>Aviainvestigation</Original>
+			<Russian>Авиаразведка</Russian>
+		</Key>
+		<Key ID="STR_TeleportDescr">
+			<Original>Easy way to get to the front lines</Original>
+			<Russian>Доставка на фронт</Russian>
+		</Key>
+		<Key ID="STR_AIDescr1">
+			<Original>Join</Original>
+			<Russian>Вступление</Russian>
+		</Key>
+		<Key ID="STR_AIDescr2">
+			<Original>the group</Original>
+			<Russian>в группу</Russian>
+		</Key>
+		<Key ID="STR_AIDescr3">
+			<Original>Required rank: higher than Private</Original>
+			<Russian>Нужен ранг выше рядового</Russian>
+		</Key>
+		<Key ID="STR_AirRepairDescr">
+			<Russian>Ремонт воздушной техники</Russian>
+			<Original>Air vehicle repair</Original>
+		</Key>
+		<Key ID="STR_RepairDescr">
+			<Russian>Ремонт техники</Russian>
+			<Original>Vehicle repair</Original>
+		</Key>
+		<Key ID="STR_UAVDescr">
+			<Russian>Нужно звание Капитан</Russian>
+			<Original>Required rank: Capitan</Original>
+		</Key>
+		<Key ID="STR_Attach">
+			<Original>Attach</Original>
+			<Russian>Прицепить</Russian>
+		</Key>
+		<Key ID="STR_Unflip">
+			<Original>Unflip</Original>
+			<Russian>На колёса</Russian>
+		</Key>
+		<Key ID="STR_Detach">
+			<Original>Detach</Original>
+			<Russian>Отцепить</Russian>
+		</Key>
+		<Key ID="STR_NoAccess">
+			<Original>%1 %2,\nyou don't have access. \nOpened for rank \n %3</Original>
+			<Russian>%1 %2,\n вам доступа нет. \n Открыто для ранга \n %3</Russian>
+		</Key>
+		<Key ID="STR_LoadoutSaved">
+			<Original>Loadout saved</Original>
+			<Russian>Снаряжение сохранено</Russian>
+		</Key>
+		<Key ID="STR_Unavailable">
+			<Original>UNAVAILABLE</Original>
+			<Russian>НЕДОСТУПНО</Russian>
+		</Key>
+		<Key ID="STR_NotGL">
+			<Original>You are not a group leader</Original>
+			<Russian>Вы не командир группы</Russian>
+		</Key>
+		<Key ID="STR_RepairTruckFar">
+			<Original>Repair truck needed</Original>
+			<Russian>Нужен ремонтный грузовик</Russian>
+		</Key>
+		<Key ID="STR_NothingToRepair">
+			<Original>Nothing to repair</Original>
+			<Russian>Нечего чинить</Russian>
+		</Key>
+		<Key ID="STR_RepairBegins">
+			<Original>Repair begins...</Original>
+			<Russian>Начинается ремонт</Russian>
+		</Key>
+		<Key ID="STR_DamageLevel">
+			<Original>Damage level - %1%2</Original>
+			<Russian>Уровень повреждений - %1%2</Russian>
+		</Key>
+		<Key ID="STR_AmmoLevel">
+			<Original>Ammo level - %1%2</Original>
+			<Russian>Уровень боезапаса - %1%2</Russian>
+		</Key>
+		<Key ID="STR_FuelLevel">
+			<Original>Fuel level - %1%2</Original>
+			<Russian>Уровень топлива - %1%2</Russian>
+		</Key>
+		<Key ID="STR_NotInAirRepair">
+			<Original>You are not in the air repair zone</Original>
+			<Russian>Вы не в зоне ремонта воздушной техники</Russian>
+		</Key>
+		<Key ID="STR_NotInRepair">
+			<Original>You are not in the repair zone</Original>
+			<Russian>Вы не в зоне ремонта техники</Russian>
+		</Key>
+		<Key ID="STR_RepairInProgress">
+			<Original>Repair is already in progress</Original>
+			<Russian>Ремонт уже идёт, подождите</Russian>
+		</Key>
+		<Key ID="STR_Repaired">
+			<Original>Repaired</Original>
+			<Russian>Починка завершена</Russian>
+		</Key>
+		<Key ID="STR_AirSupport1">
+			<Original>Air support requested by</Original>
+			<Russian>Запрос воздушной поддержки от</Russian>
+		</Key>
+		<Key ID="STR_AirSupport2">
+			<Original>You now have access</Original>
+			<Russian>Вам открыт доступ</Russian>
+		</Key>
+		<Key ID="STR_AirSupport3">
+			<Original>to airfield</Original>
+			<Russian>к аэродрому</Russian>
+		</Key>
+		<Key ID="STR_AirSupportDenied">
+			<Original>You didn't accept the call\nAccess is now closed</Original>
+			<Russian>Вы не приняли вызов\nДоступ закрыт</Russian>
+		</Key>
+		<Key ID="STR_NoVehicle">
+			<Original>No vehicle</Original>
+			<Russian>Нет техники</Russian>
+		</Key>
+		<Key ID="STR_Closer">
+			<Original>You need to be closer</Original>
+			<Russian>Нужно быть ближе</Russian>
+		</Key>
+		<Key ID="STR_NewRank1">
+			<Original>You are awarded the title of</Original>
+			<Russian>Вам присвоено звание</Russian>
+		</Key>
+		<Key ID="STR_NewRank2">
+			<Original>You now have access to the following vehicles</Original>
+			<Russian>Открыт доступ к следующей технике</Russian>
+		</Key>
+		<Key ID="STR_Awarded">
+			<Original>You have been awarded</Original>
+			<Russian>Вы были награждены</Russian>
+		</Key>
+		<Key ID="STR_Medal">
+			<Original>the medal</Original>
+			<Russian>Медалью</Russian>
+		</Key>
+		<Key ID="STR_NorthFrontWhere">
+			<Original>Northern front</Original>
+			<Russian>Северном фронте</Russian>
+		</Key>
+		<Key ID="STR_CentralFrontWhere">
+			<Original>Central front</Original>
+			<Russian>Центральном фронте</Russian>
+		</Key>
+		<Key ID="STR_SouthFrontWhere">
+			<Original>Southern front</Original>
+			<Russian>Южном фронте</Russian>
+		</Key>
+		<Key ID="STR_Advanced">
+			<Original>You advanced on the</Original>
+			<Russian>Успешное наступление</Russian>
+		</Key>
+		<Key ID="STR_Captured">
+			<Original>This place is now under our control</Original>
+			<Russian>Поселение освобождено</Russian>
+		</Key>
+		<Key ID="STR_Medal1Name">
+			<Original>"Gold star"</Original>
+			<Russian>"Золотая звезда"</Russian>
+		</Key>
+		<Key ID="STR_Medal1Descr">
+			<Original>You have captured 10 towns</Original>
+			<Russian>Вы захватили 10 городов</Russian>
+		</Key>
+		<Key ID="STR_Medal2Name">
+			<Original>"For Merit to the Fatherland"</Original>
+			<Russian>"За заслуги перед отечеством"</Russian>
+		</Key>
+		<Key ID="STR_Medal2Descr">
+			<Original>You have destroyed 30 tanks</Original>
+			<Russian>Вы уничтожили 30 танков</Russian>
+		</Key>
+		<Key ID="STR_Medal3Name">
+			<Original>of Holy Apostle Peter the First-Called</Original>
+			<Russian>Святого апостола Петра Первозванного</Russian>
+		</Key>
+		<Key ID="STR_Medal3Descr">
+			<Original>You have earned 750 points</Original>
+			<Russian>Вы заработали 750 очков</Russian>
+		</Key>
+		<Key ID="STR_Medal4Name">
+			<Original>of St. Andrew the First-Called</Original>
+			<Russian>Святого апостола Андрея Первозванного</Russian>
+		</Key>
+		<Key ID="STR_Medal4Descr">
+			<Original>You have earned 1000 points</Original>
+			<Russian>Вы заработали 1000 очков</Russian>
+		</Key>
+		<Key ID="STR_Medal5Name">
+			<Original>"For Military Merit"</Original>
+			<Russian>"За военные заслуги"</Russian>
+		</Key>
+		<Key ID="STR_Medal5Descr">
+			<Original>You have repaired 10 tanks</Original>
+			<Russian>Вы починили 10 танков</Russian>
+		</Key>
+		<Key ID="STR_Medal6Name">
+			<Original>"For Merit to the Fatherland"</Original>
+			<Russian>"За заслуги перед отечеством"</Russian>
+		</Key>
+		<Key ID="STR_Medal6Descr">
+			<Original>You have destroyed 10 tanks</Original>
+			<Russian>Вы уничтожили 10 танков</Russian>
+		</Key>
+		<Key ID="STR_Medal7Name">
+			<Original>"For courage"</Original>
+			<Russian>"За отвагу"</Russian>
+		</Key>
+		<Key ID="STR_Medal7Descr">
+			<Original>You have destroyed 10 vehicles</Original>
+			<Russian>Вы уничтожили 10 машин</Russian>
+		</Key>
+		<Key ID="STR_Medal8Name">
+			<Original>"Nesterov"</Original>
+			<Russian>"Нестеров"</Russian>
+		</Key>
+		<Key ID="STR_Medal8Descr">
+			<Original>You have destroyed 5 aircrafts</Original>
+			<Russian>Вы уничтожили 5 летательных аппаратов</Russian>
+		</Key>
+		<Key ID="STR_Medal9Name">
+			<Original>For the salvation of the lost</Original>
+			<Russian>"За спасение погибавших"</Russian>
+		</Key>
+		<Key ID="STR_Medal9Descr">
+			<Original>You have healed 10 soldiers</Original>
+			<Russian>Вы вылечили 10 солдат</Russian>
+		</Key>
+		<Key ID="STR_Medal10Name">
+			<Original>"For Merit to the Fatherland"</Original>
+			<Russian>"За заслуги перед Отечеством"</Russian>
+		</Key>
+		<Key ID="STR_Medal10Descr">
+			<Original>You have destroyed 5 tanks</Original>
+			<Russian>Вы уничтожили 5 танков</Russian>
+		</Key>
+		<Key ID="STR_Medal11Name">
+			<Original>"For courage"</Original>
+			<Russian>"За отвагу"</Russian>
+		</Key>
+		<Key ID="STR_Medal11Descr">
+			<Original>You have destroyed 5 cars</Original>
+			<Russian>Вы уничтожили 5 машин</Russian>
+		</Key>
+		<Key ID="STR_Medal12Name">
+			<Original>"Suvorov"</Original>
+			<Russian>"Суворов"</Russian>
+		</Key>
+		<Key ID="STR_Medal12Descr">
+			<Original>For active actions</Original>
+			<Russian>За активные действия</Russian>
+		</Key>
+		<Key ID="STR_Medal13Name">
+			<Original>Friendship</Original>
+			<Russian>Дружба</Russian>
+		</Key>
+		<Key ID="STR_Medal13Descr">
+			<Original>You have healed 3 soldiers</Original>
+			<Russian>Вы вылечили 3 солдата</Russian>
+		</Key>
+		<Key ID="STR_Medal14Name">
+			<Original>"For Merit to the Fatherland"</Original>
+			<Russian>"За заслуги перед отечеством"</Russian>
+		</Key>
+		<Key ID="STR_Medal14Descr">
+			<Original>You have destroyed 2 tanks</Original>
+			<Russian>Вы уничтожили 2 танка</Russian>
+		</Key>
+		<Key ID="STR_Medal15Name">
+			<Original>"For the difference in the protection of public order"</Original>
+			<Russian>"За отличие в охране общественного порядка"</Russian>
+		</Key>
+		<Key ID="STR_Medal15Descr">
+			<Original>You have destroyed 2 cars</Original>
+			<Russian>Вы уничтожили 2 машины</Russian>
+		</Key>
+		<Key ID="STR_Medal16Name">
+			<Original>"For the difference in the protection of the state border"</Original>
+			<Russian>"За отличие в охране государственной границы"</Russian>
+		</Key>
+		<Key ID="STR_Medal16Descr">
+			<Original>You have earned 25 points</Original>
+			<Russian>Вы набрали 25 очков</Russian>
+		</Key>
+		<Key ID="STR_ISeeEnemy">
+			<Original>I see an enemy at grid</Original>
+			<Russian>Вижу врага, координаты</Russian>
+		</Key>
+		<Key ID="STR_Rep">
+			<Original>REP</Original>
+			<Russian>РЕМ</Russian>
+		</Key>
+		<Key ID="STR_Amm">
+			<Original>AMM</Original>
+			<Russian>БОЕ</Russian>
+		</Key>
+		<Key ID="STR_Fue">
+			<Original>FUE</Original>
+			<Russian>ТОП</Russian>
+		</Key>
+		<Key ID="STR_T90">
+			<Original>T90</Original>
+			<Russian>T90</Russian>
+		</Key>
+		<Key ID="STR_T72">
+			<Original>T72</Original>
+			<Russian>T72</Russian>
+		</Key>
+		<Key ID="STR_ZSU">
+			<Original>ZSU</Original>
+			<Russian>ЗСУ</Russian>
+		</Key>
+		<Key ID="STR_BMP2">
+			<Original>BMP2</Original>
+			<Russian>БМП2</Russian>
+		</Key>
+		<Key ID="STR_BMP3">
+			<Original>BMP3</Original>
+			<Russian>БМП3</Russian>
+		</Key>
+		<Key ID="STR_BTR80">
+			<Original>BTR80</Original>
+			<Russian>БТР80</Russian>
+		</Key>
+		<Key ID="STR_Destroyed">
+			<Original>DESTROYED</Original>
+			<Russian>УНИЧТОЖЕННЫЙ</Russian>
+		</Key>
+		<Key ID="STR_ParamTimeMultiName">
+			<Original>Time multiplier</Original>
+			<Russian>Ускорение времени</Russian>
+		</Key>
+		<Key ID="STR_ParamStartTimeName">
+			<Original>Start time</Original>
+			<Russian>Время начала</Russian>
+		</Key>
+		<Key ID="STR_ParamStartTimeDefault">
+			<Original>From save or default</Original>
+			<Russian>Из сохранения или умолчанию</Russian>
+		</Key>
+		<Key ID="STR_ParamRandomWeatherName">
+			<Original>Random weather</Original>
+			<Russian>Случайная погода</Russian>
+		</Key>
+		<Key ID="STR_CallAir">
+			<Original>is calling for air support</Original>
+			<Russian>просит воздушную поддержку</Russian>
+		</Key>
+		<Key ID="STR_RequiredLieu">
+			<Original>Required Rank: Lieutenant</Original>
+			<Russian>Требуемое звание: лейтенант</Russian>
+		</Key>
+		<Key ID="STR_ParamHardArtilleryName">
+			<Original>Artillery: hard mode (via dialog)</Original>
+			<Russian>Сложная артиллерия (через диалог)</Russian>
+		</Key>
+		<Key ID="STR_ArtilleryInUse">
+			<Original>Artillery is in use</Original>
+			<Russian>Кто-то уже управляет артиллерией</Russian>
+		</Key>
+		<Key ID="STR_NeedToReplenish">
+			<Original>No ammo, bring an ammo truck</Original>
+			<Russian>Нет боеприпасов, подгоните грузовик</Russian>
+		</Key>
+		<Key ID="STR_Replenish">
+			<Original>Please rearm</Original>
+			<Russian>Перезарядите орудия</Russian>
+		</Key>
+		<Key ID="STR_TooEarly">
+			<Original>Too early</Original>
+			<Russian>Еще рано</Russian>
+		</Key>
+		<Key ID="STR_RearmInProgress">
+			<Original>Rearming</Original>
+			<Russian>Идёт перезарядка</Russian>
+		</Key>
+		<Key ID="STR_Execution">
+			<Original>Execution</Original>
+			<Russian>Выполнение</Russian>
+		</Key>
+		<Key ID="STR_Waiting">
+			<Original>Idling</Original>
+			<Russian>Ожидание</Russian>
+		</Key>
+		<Key ID="STR_EnterCoord">
+			<Original>Enter Coordinates</Original>
+			<Russian>Введите координаты</Russian>
+		</Key>
+		<Key ID="STR_Longitude">
+			<Original>Longitude =</Original>
+			<Russian>Долгота =</Russian>
+		</Key>
+		<Key ID="STR_Latitude">
+			<Original>Latitude =</Original>
+			<Russian>Широта =</Russian>
+		</Key>
+		<Key ID="STR_ArtSingle">
+			<Original>Single</Original>
+			<Russian>Одиночный</Russian>
+		</Key>
+		<Key ID="STR_Reset">
+			<Original>Reset</Original>
+			<Russian>Сброс</Russian>
+		</Key>
+		<Key ID="STR_UndoReset">
+			<Original>Undo Reset</Original>
+			<Russian>Вернуть</Russian>
+		</Key>
+		<Key ID="STR_ArtFire">
+			<Original>Fire</Original>
+			<Russian>Огонь</Russian>
+		</Key>
+		<Key ID="STR_ArtRearm">
+			<Original>Rearm</Original>
+			<Russian>Перезарядить</Russian>
+		</Key>
+		<Key ID="STR_ArtUnable">
+			<Original>Can't fire there</Original>
+			<Russian>Нельзя туда попасть</Russian>
+		</Key>
+		<Key ID="STR_ParamAllowedSavedLoadoutsName">
+			<Original>Allow saved loadouts</Original>
+			<Russian>Разрешить сохраненные наборы снаряжения</Russian>
+		</Key>
+	</Package>
+</Project>

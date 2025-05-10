@@ -1,0 +1,304 @@
+onLoadName="WAR-3-Front";
+onLoadMission="WAR-3-Front";
+class Header
+{
+ gameType = COOP;
+ minPlayers = 1;
+ maxPlayers = 30;
+ playerCountMultipleOf = 1;
+};
+
+estimatedTimeLeft = 600;
+//respawn="3";
+//respawndelay=10;
+debriefing = 1;
+disabledAI=1;
+respawnOnStart=0;
+showGPS=1;
+showRadio=1;
+briefing=1;
+
+#include "Hpp\Text.hpp"
+#include "Hpp\Dial.hpp"
+#include "Hpp\Arti_dial.hpp"
+#include "Hpp\EndDial.hpp"
+#include "Hpp\Pl_bot.hpp"
+#include "Hpp\Bpla_dial.hpp"
+#include "Hpp\Sel_gr.hpp"
+class Pict : RscText {
+	colorBackground[] = {1,1,1,1 };
+	colorText[] = {1,1,1,1};
+};
+
+class CfgRemoteExec
+{
+	class Functions
+	{
+		mode = 2;
+		jip = 0;
+
+		class fnc_askCreateAI { allowedTargets = 2; };
+		class fnc_ansCreateAI { allowedTargets = 1; };
+		class fnc_askSavedData { allowedTargets = 2; };
+		class fnc_askArtillery { allowedTargets = 2; };
+		class fnc_addStat { allowedTargets = 0; };
+		class setSpeaker { allowedTargets = 0; };
+		class addScore { allowedTargets = 2; };
+		class fnc_textInf { allowedTargets = 0; };
+	};
+};
+
+class RscTitles
+  {
+	titles[]={INTRO, UAV_cam, OUTRO, overlay}; 
+	
+	class INTRO 
+	  {
+  	idd=-1;
+  	movingEnable=0;
+  	duration=7;
+  	fadein=1;
+  	name="INTRO";
+	controlsBackground[] = {};
+  	controls[]={Bild};
+  	
+  	class Bild : RscText
+  	  {
+  	  	style=48; 
+  	  	text="img\war3front.paa";
+  		colorText[] = {1,1,1,1};
+  		colorBackground[] = {0,0,0,1 };
+		sizeEx = 1.0;
+		x=0;
+		y=0.1;
+		w=0.6;
+		h=0.4;
+  	  };
+  };
+  	class OUTRO 
+	  {
+  	idd=-1;
+  	movingEnable=0;
+  	duration=7;
+  	fadein=1;
+  	name="INTRO";
+	controlsBackground[] = {};
+  	controls[]={Bilp, td};
+  	
+  	class Bilp : RscText
+  	  {
+  	  	style=48; 
+  	  	text="img\war3front.paa";
+  		colorText[] = {1,1,1,1};
+  		colorBackground[] = {0,0,0,1 };
+		sizeEx = 1.0;
+		x=0.1;
+		y=0.1;
+		w=0.3;
+		h=0.2;
+  	  };
+  	class td : RscText
+  	  {
+font = "RobotoCondensed";
+text=$STR_End;
+colorText[] = {1,1,1,1};
+colorBackground[] = {0,0,0,0};
+		sizeEx = 0.2;
+		x=0;
+		y=0.5;
+		w=1;
+		h=0.2;
+
+	  };
+  
+  };
+  
+	class UAV_cam 
+	  {
+  	idd=1111;
+  	movingEnable=0;
+  	duration=10000;
+  	fadein=1;
+  	name="UAV_cam";
+  	onLoad = "Sa_UAV_cam = _this";
+	
+	controlsBackground[] = {};
+  	class controls  {
+  	
+  	class Bi0 : RscText
+  	  {
+  	  	style=48; 
+  	  	text="";
+  		colorText[] = {1,1,1,1};
+  		colorBackground[] = {0,0,0,0 };
+		x=0.4 *safezoneW +safezoneX;y=0.4*safezoneH +safezoneY;w=0.2*safezoneW;h=0.2*safezoneH;
+  	  };
+     	class fn0 : RscText
+  	  {
+  	  	text="";
+  		colorBackground[] = {0,0,0,1 };
+		x=-0.3*safezoneW +safezoneX;y=-0.2*safezoneH +safezoneY;w=1.6*safezoneW;h=0.2*safezoneH;
+  	  };
+     class fn1 : fn0 {y=1*safezoneH +safezoneY;};
+     class fn2 : fn0 {x=-0.3*safezoneW +safezoneX;y=-0.2*safezoneH +safezoneY;w=0.3*safezoneW;h=1.4*safezoneH;};
+     class fn3 : fn2 {x=1*safezoneW +safezoneX;};
+     
+	 class Help : RscText
+  	  {
+	  	sizeEx = 0.020000 * (safezoneH*safezoneW)/2;
+  	  	style=16;
+   		lineSpacing = 1; 
+  	  	text=$STR_UAVControls;
+  		colorText[] = {1,1,1,0.7};
+  		colorBackground[] = {0,0,0,0 };
+		x=safezoneX;y=safezoneY;w=0.15*safezoneW;h=0.2*safezoneH;
+ 		 };
+     	class Sp0 : RscText
+  	  {
+  	  	text=$STR_UAVSpeed;
+  		colorText[] = {1,1,1,0.7};
+  		colorBackground[] = {0,0,0,0 };
+		x=0.8*safezoneW +safezoneX;y=0.7*safezoneH +safezoneY;w=0.3*safezoneW;h=0.034*safezoneH;
+  	  };
+     	class Sn0 : Sp0 {idc = 1120;x=0.91*safezoneW +safezoneX;text="";};
+     
+     	class Sp1 : Sp0 {text=$STR_UAVHeight;y=0.78*safezoneH +safezoneY;};
+	class Sn1 : Sp1 {idc = 1121;x=0.91*safezoneW +safezoneX;text="";};
+	
+     	class Sp2 : Sp0 {text=$STR_UAVRadius;y=0.86*safezoneH +safezoneY;};
+	class Sn2 : Sp2 {idc = 1122;x=0.91*safezoneW +safezoneX;text="";};
+    };
+  };
+class overlay
+	{    
+		idd = 1337;
+		duration = 1e+1000;
+		onLoad = "uiNamespace setVariable [""rankOverlay"", _this select 0];((_this select 0) displayCtrl 1000) ctrlSetText (Mi_rang select Rang);((_this select 0) displayCtrl 1200) ctrlSetText (Mi_pic select Rang);";
+
+			controls[]=
+{
+	RankName,
+	RankPic
+};
+
+class RankName: RscText
+{
+	idc = 1000;
+	text = $STR_RankBlank; //--- ToDo: Localize;
+	x = 0.809523 * safezoneW + safezoneX;
+	y = 0.951388 * safezoneH + safezoneY;
+	w = 0.1852567 * safezoneW;
+	h = 0.0470196 * safezoneH;
+	style = 1;
+	colorBackground[] = {0,0,0,0};
+};
+class RankPic: RscPicture
+{
+	idc = 1200;
+	text = "#(argb,8,8,3)color(1,1,1,1)";
+	x = 0.959523 * safezoneW + safezoneX;
+	y = 0.864753 * safezoneH + safezoneY;
+	w = 0.030 * safezoneW;
+	h = 0.0890196 * safezoneH;
+};
+
+	};
+
+};  
+
+class Params
+{
+	class paramGrass
+	{
+		title = $STR_ParamGrassName;
+		texts[] = {$STR_ParamGrass50, "25%", "50%", "75%", $STR_ParamGrass3};
+		values[] = {50, 25, 12.5, 6.25, 3.125};
+		default = 50;
+	};
+	class paramAI
+	{
+		title = $STR_ParamAIName;
+		texts[] = {$STR_ParamAllNo,$STR_ParamAllYes};
+		values[] = {0, 1};
+		default =  1;
+	};
+	class paramResp
+	{
+		title = $STR_ParamRespawnNearName;
+		texts[] = {$STR_ParamAllUnavail,$STR_ParamAllAvail};
+		values[] = {0, 1};
+		default =  1;
+	};
+	class paramERank
+	{
+		title = $STR_ParamERankName;
+		texts[] = {$STR_ParamAllNo,$STR_ParamAllYes};
+		values[] = {0, 1};
+		default =  0;
+	};
+	class ReviveMode
+	{
+		title = $STR_A3_ReviveMode;
+		isGlobal = 1;
+
+		values[] = {
+			0,
+			1
+		};
+		texts[] = {
+			$STR_A3_Disabled,
+			$STR_A3_EnabledForAllPlayers
+		};
+		default = 0;
+		function = "bis_fnc_paramReviveMode";
+	};
+	class paramLock
+	{
+		title = $STR_ParamLockName;
+		texts[] = {$STR_ParamAllNo,$STR_ParamAllYes};
+		values[] = {0, 1};
+		default =  1;
+	};
+	class paramTimeMulti
+	{
+		title = $STR_ParamTimeMultiName;
+		texts[] = {"1x","2x","4x","60x"};
+		values[] = {1, 2, 4, 60};
+		default =  1;
+	};
+	class paramStartTime
+	{
+		title = $STR_ParamStartTimeName;
+		texts[] = {$STR_ParamStartTimeDefault,"00:00","03:00","06:00","09:00","12:00","15:00","18:00","21:00"};
+		values[] = {-1, 0, 3, 6, 9, 12, 15, 18, 21};
+		default =  6;
+	};
+	class paramRandomWeather
+	{
+		title = $STR_ParamRandomWeatherName;
+		texts[] = {$STR_ParamAllNo,$STR_ParamAllYes};
+		values[] = {0, 1};
+		default =  0;
+	};
+	class paramHardArtillery
+	{
+		title = $STR_ParamHardArtilleryName;
+		texts[] = {$STR_ParamAllNo,$STR_ParamAllYes};
+		values[] = {0, 1};
+		default =  1;
+	};
+	class paramAllowedSavedLoadouts
+	{
+		title = $STR_ParamAllowedSavedLoadoutsName;
+		texts[] = {$STR_ParamAllNo,$STR_ParamAllYes};
+		values[] = {0, 1};
+		default =  1;
+	};
+	class paramLoad
+	{
+		title = $STR_ParamLoadName;
+		texts[] = {$STR_ParamAllNo,$STR_ParamAllYes,$STR_ParamLoad2};
+		values[] = {0, 1, 2};
+		default =  1;
+	};
+};

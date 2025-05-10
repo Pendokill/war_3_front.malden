@@ -1,0 +1,48 @@
+_otr = ["rhsusf_usmc_marpat_wd_rifleman_m4","rhsusf_usmc_marpat_wd_grenadier","rhsusf_usmc_marpat_wd_squadleader","rhsusf_usmc_marpat_wd_teamleader","rhsusf_usmc_marpat_wd_smaw",
+"rhsusf_usmc_marpat_wd_smaw","rhsusf_usmc_marpat_wd_javelin","rhsusf_usmc_marpat_wd_stinger","rhsusf_usmc_marpat_wd_jfo","rhsusf_usmc_marpat_wd_autorifleman"];
+_ls = [];
+_grC = createGroup Civilian;
+_nm = _this select 0;
+_pos = getMarkerPos (format ["CC_%1",_nm]);
+(format ["CC_%1",_nm]) setMarkerSize [1,1];
+_grp = (Grp_CC select _nm) select 0;
+{_un = _grp createUnit [_x,_pos, [], 50, "FORM"];
+_ls = _ls + [_un];} forEach _otr;
+_un = _grp createUnit ["rhsusf_usmc_recon_marpat_wd_officer",_pos, [], 50, "FORM"];
+_grp selectLeader _un;
+_ls = _ls + [_un];
+_grp setCombatMode "RED";
+_grp setSpeedMode "FULL";
+_grp setBehaviour "AWARE";
+_grp = (Grp_CC select _nm) select 1;
+_ob = "rhsusf_M1117_W" createVehicle _pos;
+_ls = _ls + [_ob];
+_un = _grp createUnit ["rhsusf_usmc_recon_marpat_wd_officer",_pos, [], 50, "NONE"];
+_un moveInGunner _ob;
+_ls = _ls + [_un];
+_un  disableAI "MOVE";
+_un = _grC createUnit ["RU_Profiteer2",_pos, [], 50, "NONE"];
+_un moveInCargo _ob;
+_ls = _ls + [_un];
+_un = _grC createUnit ["Citizen1",_pos, [], 50, "NONE"];
+_un moveInCargo _ob;
+_ls = _ls + [_un];
+_un = _grC createUnit ["Damsel1",_pos, [], 50, "NONE"];
+_un moveInTurret _ob;
+_ls = _ls + [_un];
+_un  disableAI "MOVE";
+[_un,8,"killed"] call fnc_addStatEH;
+List_WE_C = List_WE_C + _ls; 
+(format ["CC_%1",_nm]) setMarkerSize [1,1];
+(format ["CC_%1",_nm]) setMarkerText "ComCentr";
+sleep 600;
+_ls = [];
+While {(WEST countSide _ls) > 3} do {
+_ls = nearestObjects [_pos, ["Man"],50];
+sleep 60;
+};
+sleep 2;
+(format ["CC_%1",_nm]) setMarkerText "";
+deleteMarker (format ["CC_%1",_nm]);
+[4,_nm,3] remoteExec ["fnc_textInf"];
+

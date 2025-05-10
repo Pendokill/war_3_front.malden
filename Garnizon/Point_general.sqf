@@ -1,0 +1,61 @@
+_otr = ["rhsusf_usmc_marpat_wd_rifleman_m4","rhsusf_usmc_marpat_wd_grenadier","rhsusf_usmc_marpat_wd_squadleader","rhsusf_usmc_marpat_wd_teamleader","rhsusf_usmc_marpat_wd_smaw",
+"rhsusf_usmc_marpat_wd_smaw","rhsusf_usmc_marpat_wd_javelin","rhsusf_usmc_marpat_wd_stinger","rhsusf_usmc_marpat_wd_jfo","rhsusf_usmc_marpat_wd_autorifleman"];
+_ms = [];
+_ls = [];
+_nm = _this select 0;
+_pos = getMarkerPos (format ["general_%1",_nm]);
+_grp = (Grp_CC select _nm) select 0;
+_ms = nearestObjects [_pos, ["StaticWeapon"],100];
+{_un = _grp createUnit ["rhsusf_usmc_marpat_wd_rifleman_m4",_pos, [], 50, "FORM"];
+_un moveInGunner _x;
+_ls = _ls + [_un];} forEach _ms;
+
+
+{_un = _grp createUnit [_x,_pos, [], 10, "FORM"];
+_ls = _ls + [_un];} forEach _otr;
+_un = _grp createUnit ["rhsusf_usmc_recon_marpat_wd_officer",_pos, [], 10, "FORM"];
+_grp selectLeader _un;
+_ls = _ls + [_un];
+_grp setCombatMode "RED";
+_grp setSpeedMode "FULL";
+_grp setBehaviour "AWARE";
+
+_ms = nearestObjects [_pos, ["CampEast"],50];
+_pos = getPos (_ms select 0);
+_ps = [(_pos select 0) + 1,(_pos select 1) + 1];
+_grp = (Grp_CC select _nm) select 1;
+_un = _grp createUnit ["rhsusf_usmc_recon_marpat_wd_officer",_ps, [], 50, "NONE"];
+_un setPos _ps;
+_un setDir 225;
+_un  disableAI "MOVE";
+_ls = _ls + [_un];
+_ps = [(_pos select 0) - 1,(_pos select 1) + 1];
+_un = _grp createUnit ["C_man_p_beggar_F_euro",_ps, [], 50, "NONE"];
+_un setPos _ps;
+_un setDir 135;
+_un  disableAI "MOVE";
+_ls = _ls + [_un];
+_ps = [(_pos select 0) + 1,(_pos select 1) - 1];
+_un = _grp createUnit ["C_man_p_beggar_F_euro",_ps, [], 50, "NONE"];
+_un setPos _ps;
+_un setDir 305;
+_un  disableAI "MOVE";
+_ls = _ls + [_un];
+_ps = [(_pos select 0) - 1,(_pos select 1) - 1];
+_un = _grp createUnit ["rhsgref_ins_g_commander",_ps, [], 50, "NONE"];
+_un setPos _ps;
+_un setDir 45;
+_un  disableAI "MOVE";
+_ls = _ls + [_un];
+[_un,8,"killed"] call fnc_addStatEH;
+List_WE_C = List_WE_C + _ls;
+(format ["general_%1",_nm]) setMarkerSize [1,1];
+sleep 600;
+_ls = [];
+While {(WEST countSide _ls) > 3} do {
+_ls = nearestObjects [_pos, ["Man"],50];
+sleep 60;
+};
+sleep 2;
+deleteMarker (format ["general_%1",_nm]);
+[4,_this select 1,3] remoteExec ["fnc_textInf"];
